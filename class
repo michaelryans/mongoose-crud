@@ -1,0 +1,28 @@
+books
+
+_id: ObjectId,
+isbn: String,
+title: String,
+author: String,
+category: String,
+stock: Number
+
+
+
+members
+_id: ObjectId,
+name: String,
+address: String,
+zipcode: String,
+email: String,
+phone: String
+
+
+transactions
+_id: ObjectId,
+member: ObjectId,
+in_date: Date,
+out_date: Date
+due_date: Date,
+fine; Number,
+booklist: Arra of Book Id
